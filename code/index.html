@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisUI and Tailwind adding  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font adding  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="poppins">
+    <nav>
+      <div class="navbar px-8">
+        <div class="flex-1">
+          <div class="flex">
+            <img class="w-10 h-10" src="../assets/logo.png" alt="" />
+            <a class="btn btn-ghost text-3xl -mx-2"
+              ><span class="font-light">Dev</span>Board</a
+            >
+          </div>
+        </div>
+        <div class="flex">
+          <div
+            class="mx-4 my-1 border border-solid border- rounded-2xl p-1 py-2"
+          >
+            <input type="checkbox" checked="checked" class="checkbox" /> 25
+          </div>
+
+          <img class="w-8 h-8 my-2" src="../assets/theme-btn.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <div class="grid grid-cols-12 gap-4 py-8 px-8 grid-rows-12">
+      <div class="col-span-2 bg-gray-200 row-span-2 h-32"></div>
+      <div class="col-span-4 bg-gray-200 row-span-2">2</div>
+      <div class="col-span-2 bg-gray-200 row-span-2">3</div>
+      <div class="col-span-4 bg-gray-200 row-span-12">4</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52">5</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52">6</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52">7</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52">8</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52 -my-28">9</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52 -my-28">10</div>
+      <div class="col-span-2 bg-gray-200 row-span-5 h-52 -my-28">11</div>
+      <div class="col-span-2 bg-gray-200 -my-28">12</div>
+    </div>
+  </body>
+</html>
