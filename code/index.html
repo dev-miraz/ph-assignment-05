@@ -40,7 +40,7 @@
           <div
             class="mx-4 my-1 border border-solid border- rounded-2xl p-1 py-2"
           >
-            <input type="checkbox" checked="checked" class="checkbox" /> 25
+            <input type="checkbox" checked="checked" class="checkbox" /> <span id="total">25</span>
           </div>
 
           <img class="w-8 h-8 my-2" src="../assets/theme-btn.png" alt="" />
@@ -55,13 +55,13 @@
           type="checkbox"
           checked="checked"
           class="checkbox mx-2 border rounded-full"
-        />Total Assigned <br /><span class="text-2xl font-bold">05</span>
+        />Total Assigned <br /><span class="text-2xl font-bold" id="assigned">05</span>
       </div>
       <div
-        class="col-span-4 rounded-lg row-span-2 flex text-center py-8 px-8 bg-gradient-to-r from-indigo-500 via-rgba(108, 127, 250, 1) to-blue-200"
+        class="col-span-4 rounded-lg row-span-2 flex text-center py-8 px-8 bg-gradient-to-r from-indigo-500 via-rgba(108, 127, 250, 1) to-blue-200 cursor-pointer" 
       >
         <img class="w-18 h-16" src="../assets/board.png" alt="" />
-        <span class="py-3 text-xl font-semibold"
+        <span class="py-3 text-xl font-semibold" id="discover-btn"
           >Discover Something New <br />Today !</span
         >
       </div>
@@ -74,8 +74,8 @@
           />
         </div>
         <span class="-top-5 text-xl font-semibold mt-8 ml-4 -mx-8"
-          ><span class="font-medium">WED,</span><br />
-          FEB 28, 2025</span
+          ><span class="font-medium"><span id="day"></span></span><br />
+          <span id="month">FEB 28, 2025</span></span
         >
       </div>
       <div class="col-span-4 bg-[#F4F7FF] rounded-lg row-span-12 flex flex-col">
@@ -90,13 +90,19 @@
           <span class="my-10 -mx-4">Activity Log</span>
           <div class="-my-16">
             <div class="btn btn-primary mt-16 translate-y-4">
-              <button>Clear History</button>
+              <button id="clear-btn">Clear History</button>
             </div>
             <div class="border-solid rounded-xl my-6 px-4 bg-white mx-2">
-              <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+              <p id="gayeb1">
+                You have Complete The Task Add Dark Mode at
+                <span id="clockTime">00:00:00 PM</span>
+              </p>
             </div>
             <div class="border-solid rounded-xl my-2 px-4 bg-white mx-2">
-              <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+              <p id="gayeb2">
+                You have Complete The Task Add Dark Mode at
+                <span id="clockTime"> 00:00:00 PM </span>
+              </p>
             </div>
           </div>
         </div>
@@ -118,10 +124,10 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button id="button" class="px-4 text-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -138,15 +144,15 @@
           <p
             class="text-xs pb-2 pt-2 border-none bg-[#FFFFFF] rounded-md mt-2 mb-2"
           >
-          Store the user's preference in localStorage, update CSS variables...
+            Store the user's preference in localStorage, update CSS variables...
           </p>
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm " id="button">Completed</button>
             </div>
           </div>
         </div>
@@ -159,7 +165,7 @@
           >
             SwiftPay
           </h4>
-          <h2 class="font-semibold text-sm mt-2">Optimize  Home page </h2>
+          <h2 class="font-semibold text-sm mt-2">Optimize Home page </h2>
           <p
             class="text-xs pb-2 pt-2 border-none bg-[#FFFFFF] rounded-md mt-2 mb-2"
           >
@@ -168,10 +174,10 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm" id="button">Completed</button>
             </div>
           </div>
         </div>
@@ -193,24 +199,26 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm" id="button">Completed</button>
             </div>
           </div>
         </div>
       </div>
-        <!-- 05 -->
+      <!-- 05 -->
       <div></div>
-      <div class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40">
+      <div
+        class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40"
+      >
         <div class="px-4 py-4 text-left">
           <h4
             class="border border-none bg-[#FFFFFF] text-xs w-20 h-6 py-1 rounded-md px-3"
           >
             GoogleLLC
           </h4>
-          <h2 class="font-semibold text-sm mt-2">Integrate OpenAI API </h2>
+          <h2 class="font-semibold text-sm mt-2">Integrate OpenAI API</h2>
           <p
             class="text-xs pb-2 pt-2 border-none bg-[#FFFFFF] rounded-md mt-2 mb-2"
           >
@@ -219,23 +227,25 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm" id="button">Completed</button>
             </div>
           </div>
         </div>
       </div>
-        <!-- 06 -->
-      <div class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40">
+      <!-- 06 -->
+      <div
+        class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40"
+      >
         <div class="px-4 py-4 text-left">
           <h4
             class="border border-none bg-[#FFFFFF] text-xs w-20 h-6 py-1 rounded-md px-3"
           >
             GlassDoor
           </h4>
-          <h2 class="font-semibold text-sm mt-2">Improve Job searching </h2>
+          <h2 class="font-semibold text-sm mt-2">Improve Job searching</h2>
           <p
             class="text-xs pb-2 pt-2 border-none bg-[#FFFFFF] rounded-md mt-2 mb-2"
           >
@@ -244,16 +254,18 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm" id="button">Completed</button>
             </div>
           </div>
         </div>
       </div>
-        <!-- 07 -->
-    <div class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40">
+      <!-- 07 -->
+      <div
+        class="col-span-2 bg-[#F4F7FF] rounded-lg row-span-5 h-52 -translate-y-40"
+      >
         <div class="px-4 py-4 text-left">
           <h4
             class="border border-none bg-[#FFFFFF] text-xs w-24 h-6 py-1 rounded-md px-3"
@@ -269,16 +281,19 @@
           <div class="border-t-2 border-dotted flex text-xs">
             <div class="text-xs mt-2">
               Deadline <br />
-              21 March 2025
+              <span id="Date">00 March 2025</span>
             </div>
             <div class="btn btn-primary font-normal text-lg w-24 h-8 mt-2">
-              <button class="px-4 text-sm">Completed</button>
+              <button class="px-4 text-sm" id="button">Completed</button>
             </div>
           </div>
-          
         </div>
       </div>
-     
     </div>
+
+    <script src="../code/script.js"></script>
+    <script src="../date&time.js"></script>
+    <script src="../code/clear-history.js"></script>
+    <script src="../code/assigned.js"></script>
   </body>
 </html>

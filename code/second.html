@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- daisUI and Tailwind adding  -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+      <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+      <!-- font adding  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <style>
+        .poppins {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+        }
+      </style>
+</head>
+<body class="poppins">
+    <nav>
+        <div class="navbar px-8 shadow-md my-4 border border-b-gray-100 border-white rounded-md ml-4 mr-4 ">
+          <div class="flex-1">
+            <div class="flex">
+              <img class="w-10 h-10" src="../assets/logo.png" alt="" />
+              <a class="btn btn-ghost text-3xl -mx-2"
+                ><span class="font-light">Dev</span>Board</a
+              >
+            </div>
+          </div>
+          <div>
+            <a href="../code/index.html"><button class="btn bg-[#3752FD] p-4 text-[#FFFFFF] font-medium" >Go Back </button></a>
+          </div>
+        </div>
+      </nav>
+      <div class="text-center my-8 bg-slate-100 py-6 text-2xl font-semibold shadow-md"><h1>BLOG</h1></div>
+
+      
+      <!-- faq -->
+       <section>
+        
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold text-4xl">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-2xl font-medium">There are different ways to select items in DOM they are, .getELementById, .getELementBy, .getElementsByClassName, getElementsByTagName etc.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold  text-4xl">Question-2: What is the difference between innerText, innerHTML, and textContent?</div>
+            <div class="collapse-content text-2xl font-medium">innerText returns all text of its element and all its child elements whereas innerHTML returns all text, html tags and textContent can take controls of any HTML tags.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold  text-4xl">Question-3: What is event delegation in the DOM</div>
+            <div class="collapse-content text-2xl font-medium">Actually, in DOM event delegations mean i can call parent by doing a single event listener where i don't have to write down listener for its child every time.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold  text-4xl">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-2xl font-medium">This thing is like a scholar who has connection with the most lower class people to upper class people of a society gradually. In DOM that's why it is called tree because An event occurs on an element, such as a button click <br>
+               <div class="font-semibold text-lg my-5"> A. The event handler for that element is triggered <br>
+                B. The event bubbles up to the element's parent <br>
+                C. If the parent has an event handler, it is triggered <br>
+                D. The event continues to bubble up to the document element</div></div>
+          </div>
+          
+  
+       </section>
+       <script src="../code/script.js"></script>
+</body>
+</html>
